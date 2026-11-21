@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ku" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA 6 — ڕێنمایی چیت کۆدەکان</title>
+<style>
+:root{
+  color-scheme:dark;--bg:#09090d;--panel:rgba(18,16,22,.9);
+  --text:#fff6f7;--muted:#c7b8be;--red:#ff405f;--pink:#ff58a0;
+  --border:rgba(255,75,112,.4);--codebg:#09090d;
+}
+body.light{
+  color-scheme:light;--bg:#f5edf0;--panel:rgba(255,250,251,.92);
+  --text:#24151c;--muted:#68575e;--red:#c31339;--pink:#d8327a;
+  --border:rgba(183,30,67,.3);--codebg:#f2e8ec;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;padding:18px 12px 42px;color:var(--text);
+  font-family:system-ui,-apple-system,sans-serif;
+  background:
+    linear-gradient(180deg,rgba(8,7,12,.12),rgba(8,7,12,.78),var(--bg)),
+    radial-gradient(ellipse at 78% 10%,#ff2d6c66,transparent 26%),
+    radial-gradient(ellipse at 14% 20%,#4167ff55,transparent 30%),
+    linear-gradient(145deg,#421326,#1b1222 48%,#09090d);
+  background-attachment:fixed;transition:.25s;
+}
+body.light{
+  background:
+    linear-gradient(180deg,#fff3f680,#f5edf0e8,var(--bg)),
+    radial-gradient(ellipse at 78% 10%,#ff68a755,transparent 26%),
+    radial-gradient(ellipse at 14% 20%,#718bff55,transparent 30%),
+    linear-gradient(145deg,#f2aec3,#ded1e8 50%,#c4cee8);
+  background-attachment:fixed;
+}
+.wrap{max-width:980px;margin:auto}
+header,.box,.card,footer{
+  background:var(--panel);border:1px solid var(--border);
+  box-shadow:0 12px 32px #0003;backdrop-filter:blur(10px);
+}
+header{padding:20px 16px;text-align:center;border-radius:20px}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.badge{font-size:11px;letter-spacing:.15em;color:var(--pink);direction:ltr}
+button{
+  padding:9px 13px;border-radius:99px;border:1px solid var(--border);
+  color:var(--text);background:var(--panel);font:inherit;cursor:pointer
+}
+h1{
+  margin:24px 0 2px;color:#fff2f6;direction:ltr;
+  font:900 clamp(55px,13vw,100px)/1 system-ui,sans-serif;
+  text-shadow:0 0 14px #ff345f,0 0 42px #ff287a
+}
+h2{margin:10px 0 5px;font-size:clamp(20px,5vw,28px)}
+.sub{margin:0;color:var(--muted);direction:ltr;font-size:13px}
+.box{margin-top:15px;padding:17px;border-radius:15px;line-height:1.9}
+.box h3{margin:0 0 9px;color:var(--red);font-size:19px}
+.steps{margin:8px 0 0;padding-right:24px}
+.steps li{padding:4px 0}
+.en{direction:ltr;text-align:left;color:var(--pink);font-size:13px;margin-top:2px}
+.warn{border-color:#a82a43;background:color-mix(in srgb,var(--red) 9%,var(--panel))}
+.legend{text-align:center;color:var(--muted);font-size:14px;margin:15px 0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+.card{padding:14px;border-radius:14px;break-inside:avoid}
+.cardhead{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid var(--border);padding-bottom:9px;margin-bottom:10px}
+.name{font-weight:750}
+.name-en{color:var(--pink);direction:ltr;text-align:left;font-size:13px;margin-top:3px}
+.no{color:var(--red);direction:ltr;font:700 12px monospace}
+.code{
+  padding:11px 6px;text-align:center;direction:ltr;overflow-wrap:anywhere;
+  border:1px solid var(--border);border-radius:9px;background:var(--codebg);
+  font:700 15px/1.6 ui-monospace,monospace;letter-spacing:.04em
+}
+footer{margin-top:16px;padding:15px;border-radius:14px;text-align:center;color:var(--muted);font-size:13px;line-height:1.8}
+@media(max-width:620px){.grid{grid-template-columns:1fr}.bar{align-items:flex-start}}
+@media print{body{print-color-adjust:exact}button{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="bar">
+    <span class="badge">ARA</span>
+    <button id="theme">☀️ دۆخی ڕووناک</button>
+  </div>
+  <h1>GTA 6</h1>
+  <h2>ڕێنمایی چیت کۆدەکان · Cheat Code Guide</h2>
+  <p class="sub">Kurdish Sorani + English</p>
+</header>
+
+<section class="box">
+  <h3>چۆن چیتەکان بکەرەوە؟ · How to unlock cheats</h3>
+  <ol class="steps">
+    <li>چیرۆکی سەرەکی تەواو بکە.<div class="en">Finish the main story.</div></li>
+    <li>لە Pause Menu بچۆ بۆ <b>Progress</b>، پاشان <b>Cheats</b> هەڵبژێرە.<div class="en">Open Pause Menu → Progress → Cheats.</div></li>
+    <li>مەرجی چیتی دڵخوازت جێبەجێ بکە؛ هەر چیتێک مەرجی تایبەتی خۆی هەیە.<div class="en">Complete that cheat’s unlock challenge.</div></li>
+  </ol>
+</section>
+
+<section class="box">
+  <h3>چۆن کۆدەکە داخڵ بکەیت؟ · How to enter a code</h3>
+  <ol class="steps">
+    <li>لە یاریی ئازاددا، دوگمەی <b>↑ لە D-pad</b> دابگرە بۆ کردنەوەی مۆبایلی ناو یاری.<div class="en">In free roam, press Up on the D-pad to open the in-game phone.</div></li>
+    <li>لە <b>PS5</b>، <b>L1</b> بگرە و <b>R1</b> دابگرە. لە <b>Xbox</b>، <b>LB</b> بگرە و <b>RB</b> دابگرە.<div class="en">PS5: hold L1 and press R1. Xbox: hold LB and press RB.</div></li>
+    <li>کۆدەکە بە D-pad و بەو ڕیزبەندییەی لە خوارەوە نووسراوە داخڵ بکە. هەمان ڕیزبەندی لە PS5 و Xbox کار دەکات.<div class="en">Enter the sequence with the D-pad, in order. The sequence is the same on PS5 and Xbox.</div></li>
+  </ol>
+</section>
+
+<section class="box warn">
+  <b>ئاگاداری / Warning:</b>
+  پێش بەکارهێنانی چیت، یارییەکەت پاشەکەوت بکە. چیتەکان پاشەکەوتکردن و achievement/trophy لە ماوەی ئەو دانیشتنەدا ناچالاک دەکەن.
+  <div class="en">Save first. Cheats disable saving and achievements/trophies for that play session.</div>
+  <br>
+  <b>گرنگ / Important:</b>
+  کۆدەکان لە لیستە یاریزانانەکاندا ڕاپۆرت کراون؛ پشتڕاستکردنەوەی فەرمیی Rockstar نین.
+  <div class="en">These sequences are reported by player guides, not officially confirmed by Rockstar.</div>
+</section>
+
+<p class="legend">
+  ↑ سەرەوە / Up　•　↓ خوارەوە / Down　•　← چەپ / Left　•　→ ڕاست / Right
+</p>
+
+<main class="grid">
+  <article class="card"><div class="cardhead"><div><div class="name">پارەی ٢٥٠٬٠٠٠ دۆلار</div><div class="name-en">$250,000</div></div><span class="no">01</span></div><div class="code">↑ → ↓ ← ↑ ← ↓ →</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">بەرزکردنەوەی ئاستی Heat</div><div class="name-en">Raise Heat Level</div></div><span class="no">02</span></div><div class="code">← ↓ → ↓ ↑ ↓ ↑</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">بەرزکردنەوەی ئاستی Wanted</div><div class="name-en">Raise Wanted Level</div></div><span class="no">03</span></div><div class="code">← ↓ → ↓ ↑ → ↑</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">Focusی بێکۆتایی</div><div class="name-en">Unlimited Focus</div></div><span class="no">04</span></div><div class="code">↓ ↑ ↑ ↓ ↑ ↓ ↑ ↓ ↑ →</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">جەستەپارێز</div><div class="name-en">Body Armor</div></div><span class="no">05</span></div><div class="code">↓ ↑ ← ↑ ↑ ↑ ↑ ↑ ↓ ↓</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">زخیرەی زۆرترین</div><div class="name-en">Max Ammo</div></div><span class="no">06</span></div><div class="code">↓ ↑ → ↓ ← ← ↑ ↑ ↓ ←</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">زخیرەی بێکۆتایی</div><div class="name-en">Infinite Ammo</div></div><span class="no">07</span></div><div class="code">↓ ↑ → ↓ ← ← ↑ ↓ ↓ ↓</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">بێ پێویستی بە پڕکردنەوەی چەک</div><div class="name-en">No Reload</div></div><span class="no">08</span></div><div class="code">↓ ↑ → ↓ ← ← ↑ ↓ ↓ ↑</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">هێزی هێرش</div><div class="name-en">Attack Force</div></div><span class="no">09</span></div><div class="code">↓ ↑ ← ← → ↓ ↓ ↑ ↓</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">تۆپی تەقینەوە</div><div class="name-en">Exploding Balls</div></div><span class="no">10</span></div><div class="code">↓ ↑ ← ← → ↓ ↓ ↑ →</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">هێزی ئۆتۆمبێل</div><div class="name-en">Vehicle Force</div></div><span class="no">11</span></div><div class="code">↓ ↑ ← ← → ↓ ← ↑ ↓</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">بانگکردنی Maibatsu Boomazoom</div><div class="name-en">Spawn Maibatsu Boomazoom</div></div><span class="no">12</span></div><div class="code">← ↑ → ↓ ← ← ↑ ←</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">بانگکردنی ئۆتۆمبێلی ئاگرکوژێنەوە</div><div class="name-en">Spawn MTL Pumper</div></div><span class="no">13</span></div><div class="code">← ↑ → ↓ ← → → ↑</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">بانگکردنی بلدۆزەری HVY</div><div class="name-en">Spawn HVY Bulldozer</div></div><span class="no">14</span></div><div class="code">← ↑ → ↓ ← → → ↓</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">گۆڕینی کەشوهەوا</div><div class="name-en">Cycle Weather</div></div><span class="no">15</span></div><div class="code">↓ → ↑ ↓ → ↑ →</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">فلتەری Cataclysm</div><div class="name-en">Cataclysm Filter</div></div><span class="no">16</span></div><div class="code">↓ ↓ ↑ → → ↑ ← ← → →</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">فلتەری Dollhouse</div><div class="name-en">Dollhouse Filter</div></div><span class="no">17</span></div><div class="code">↓ ↓ ↑ → → ↑ ← ← ↓ →</div></article>
+  <article class="card"><div class="cardhead"><div><div class="name">فلتەری Faded Glory</div><div class="name-en">Faded Glory Filter</div></div><span class="no">18</span></div><div class="code">↓ ↓ ↑ → → ↑ ← ← ← →</div></article>
+</main>
+
+<footer>
+  ئەگەر کۆدێک کار نەکرد، دڵنیابە چیرۆکەکەت تەواو کردووە و مەرجی ئەو چیتەت جێبەجێ کردووە.
+  <br>
+  If a code does not work, make sure the story is complete and that cheat’s unlock challenge is done.
+</footer>
+</div>
+
+<script>
+const button = document.getElementById("theme");
+function setTheme(mode){
+  document.body.classList.toggle("light", mode === "light");
+  button.textContent = mode === "light" ? "🌙 دۆخی تاریک" : "☀️ دۆخی ڕووناک";
+  localStorage.setItem("gta6-theme", mode);
+}
+setTheme(localStorage.getItem("gta6-theme") || "dark");
+button.addEventListener("click",()=>{
+  setTheme(document.body.classList.contains("light") ? "dark" : "light");
+});
+</script>
+</body>
+</html>
